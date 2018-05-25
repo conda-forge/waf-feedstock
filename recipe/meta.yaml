@@ -14,6 +14,7 @@ build:
   number: 0
   script:
     - cp {{name}}-{{version}}.py "${PREFIX}/bin/waf"  # [unix]
+    - chmod a+x "${PREFIX}/bin/waf"  # [unix]
 
     - copy {{name}}-{{version}}.py "%SCRIPTS%/waf.py"  # [win]
     - copy "%RECIPE_DIR%\waf.bat" "%SCRIPTS%"  # [win]
