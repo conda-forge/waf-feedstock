@@ -1,4 +1,4 @@
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://waf.io/waf-{{ version }}.tar.bz2
-  sha256: 5ae70f057c793ad795f263adb4769b09f4a79666942f33bb54ad4d23f78bfb52
+  sha256: 170cd93799843da4d058f4918592266244e477441ec5044e97b3df71839fa7b9
 
 build:
   number: 0
