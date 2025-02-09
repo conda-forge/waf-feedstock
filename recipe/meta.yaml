@@ -1,4 +1,4 @@
-{% set version = "2.1.4" %}
+{% set version = "2.1.5" %}
 
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://waf.io/waf-{{ version }}.tar.bz2
-  sha256: 2a128298be763e23987780b8993cefae3dc362596e46906f7ec2ed4795028c26
+  sha256: ca23407fe8169c9ca8c439fcc8ac143230da056678df279220ebf0c10091678a
 
 build:
-  number: 1
+  number: 0
   script:
     - python waf-light --make-waf --tool=swig,cython,boost,use_config
     - cp waf "${PREFIX}/bin"     # [unix]
