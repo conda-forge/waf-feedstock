@@ -10,7 +10,7 @@ source:
   sha256: 4a47a431b86d5c42fa23b8474aaf752384dcaed65fe9e6aa1f518c103d38a7d1
 
 build:
-  number: 0
+  number: 1
   script:
     - python waf-light --make-waf --tool=swig,cython,boost,use_config
     - cp waf "${PREFIX}/bin"     # [unix]
